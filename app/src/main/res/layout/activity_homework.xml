@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback"
+    android:orientation="vertical" >
+
+      <com.shengliedu.parent.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.parent.view.CustomTitle>
+
+    <RelativeLayout
+        android:id="@+id/home_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/home_yanjingbeijing"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/img_yiwangtimu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@mipmap/after_jiantoubai" />
+
+        <Button
+            android:id="@+id/tv_yiwangtimu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_yiwangtimu"
+            android:background="@android:color/transparent"
+            android:text="以往\n作业"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_yiwangtimu"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/img_eyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/after_yanjing" />
+
+            <TextView
+                android:id="@+id/yiyuedianji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_eyes"
+                android:textColor="@color/seagreen"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_bottom"
+        android:layout_below="@+id/ctitle"
+        android:cacheColorHint="#00000000"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000" >
+    </ExpandableListView>
+
+
+</RelativeLayout>

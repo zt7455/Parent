@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback" >
+
+    <com.shengliedu.parent.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.parent.view.CustomTitle>
+
+    <ImageView
+        android:id="@+id/sync_sheji_imageview"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ctitle"
+        android:layout_margin="10dp"
+        android:src="@mipmap/tx" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ctitle"
+        android:layout_toRightOf="@+id/sync_sheji_imageview"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sync_sheji_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="第一节数学"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sync_sheji_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:text="第二单元-火红的枫叶-课时2"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sheji_bl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ctitle"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sync_sheji_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="8:30-9:10"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/sync_sheji_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="[进行中]" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView_syn_sheji"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sync_sheji_imageview"
+        android:divider="@mipmap/line_bg"
+        android:dividerHeight="0.1dp"
+        android:fadingEdge="none"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000" >
+    </ExpandableListView>
+
+</RelativeLayout>

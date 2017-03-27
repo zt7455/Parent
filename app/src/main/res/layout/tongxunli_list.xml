@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qunliao_rel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/loginback" >
+
+    <ImageView
+        android:id="@+id/tongxunlu_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/app_parent_welcome"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tongxunlu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@id/tongxunlu_head"
+        android:text="测试用户"
+        android:textColor="@color/black"
+        android:textSize="20sp" 
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

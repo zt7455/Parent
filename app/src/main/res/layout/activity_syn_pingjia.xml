@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <com.shengliedu.parent.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.parent.view.CustomTitle>
+
+    <ScrollView
+        android:id="@+id/syn_question_titlescroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ctitle"
+        android:background="@mipmap/loginback" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.shengliedu.parent.view.NoScrollListview
+                android:id="@+id/syn_question_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:listSelector="#00000000" >
+            </com.shengliedu.parent.view.NoScrollListview>
+
+            <LinearLayout
+                android:id="@+id/syn_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="invisible" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评价结果:"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/position"
+                        android:text="孩子职务:"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TableRow
+                        android:id="@+id/tableRow1_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/white" >
+
+                        <TextView
+                            style="@style/textview_allgrade_content"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/table_bg"
+                            android:text="组员评分\n得分/满分" />
+
+                        <TextView
+                            style="@style/textview_allgrade_content"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/table_bg"
+                            android:text="自我评分\n得分/满分" />
+
+                        <TextView
+                            style="@style/textview_allgrade_content"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/table_bg"
+                            android:text="老师评分\n得分/满分" />
+
+                        <TextView
+                            style="@style/textview_allgrade_content"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/table_bg"
+                            android:text="合计得分\n得分/满分" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow1_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/zuyuan_pingjia"
+                            style="@style/textview_allgrade_content"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/table_bg1"
+                            android:text="4.5/5"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/self_pingjia"
+                            style="@style/textview_allgrade_content"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/table_bg1"
+                            android:text="4.5/5"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/teacher_pingjia"
+                            style="@style/textview_allgrade_content"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/table_bg1"
+                            android:text="4.5/5"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/zong_pingjia"
+                            style="@style/textview_allgrade_content"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/table_bg1"
+                            android:text="4.5/5"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pj_lin"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="家长评价："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/jiazhang_pingjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/go_pingjia"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/seagreen"
+                    android:padding="5dp"
+                    android:text="评价表现"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

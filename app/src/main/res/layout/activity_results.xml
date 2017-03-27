@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+   <com.shengliedu.parent.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.parent.view.CustomTitle>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ctitle"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/menu_r1"
+                style="@style/chengjibutton"
+                android:src="@mipmap/ionc_1" />
+
+            <ImageView
+                android:id="@+id/menu_r2"
+                style="@style/chengjibutton"
+                android:src="@mipmap/ionc_2" />
+
+            <ImageView
+                android:id="@+id/menu_r3"
+                style="@style/chengjibutton"
+                android:src="@mipmap/ionc_3" />
+
+            <ImageView
+                android:id="@+id/menu_r4"
+                style="@style/chengjibutton"
+                android:src="@mipmap/ionc_4" />
+
+            <ImageView
+                android:id="@+id/menu_r5"
+                style="@style/chengjibutton"
+                android:src="@mipmap/ionc_5" />
+
+            <ImageView
+                android:id="@+id/menu_r6"
+                style="@style/chengjibutton"
+                android:src="@mipmap/ionc_6" />
+
+            <ImageView
+                android:id="@+id/menu_r7"
+                style="@style/chengjibutton"
+                android:src="@mipmap/ionc_7" />
+
+            <ImageView
+                android:id="@+id/menu_r8"
+                style="@style/chengjibutton"
+                android:src="@mipmap/ionc_8" />
+
+            <ImageView
+                android:id="@+id/menu_r9"
+                style="@style/chengjibutton"
+                android:src="@mipmap/ionc_9" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

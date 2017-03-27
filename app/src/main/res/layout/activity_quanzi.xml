@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback"
+    android:orientation="vertical" >
+
+    <com.shengliedu.parent.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.parent.view.CustomTitle>
+
+    <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ctitle" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/schoolinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <RelativeLayout
+                    android:id="@+id/rela1"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp" >
+
+                    <ImageView
+                        android:id="@+id/app_ima"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/user_head_bg"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/qun" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dip"
+                        android:layout_toRightOf="@id/app_ima"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/app_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="飞翔的大牛"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/app_wel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="您有新的消息"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/line_normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rela2"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_below="@id/rela1" >
+
+                    <ImageView
+                        android:id="@+id/school_head"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/user_head_bg"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/qun" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_news2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dip"
+                        android:layout_toRightOf="@id/school_head"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/school_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="飞翔的大牛"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/school_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="您有新的消息"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/line_normal" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.shengliedu.parent.view.NoScrollListview
+                android:id="@+id/quanzi_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/schoolinfo"
+                android:divider="@drawable/line_normal"
+                android:dividerHeight="0.2dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" >
+            </com.shengliedu.parent.view.NoScrollListview>
+        </RelativeLayout>
+    </ScrollView> -->
+ <ListView
+        android:id="@+id/quanzi_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ctitle"
+        android:cacheColorHint="@color/transparent_background"
+        android:fadingEdge="none"
+        android:padding="2dp"
+        android:scrollbars="none" >
+    </ListView>
+</RelativeLayout>

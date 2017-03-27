@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@mipmap/loginback">
+     <ImageView
+        android:id="@+id/sync_imageview"
+        android:layout_width="65dp"
+        android:layout_height="65dp" 
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/tx"
+        android:layout_margin="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_toRightOf="@+id/sync_imageview"
+      
+        >
+        
+        <TextView android:id="@+id/quanzi_title" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="刘能"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+             />
+        
+        <TextView android:id="@+id/quanzi_info" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="18dp"
+            android:textSize="15sp"
+           android:text="听说你最近中了500万"
+           android:maxEms="10" 
+           android:singleLine="true"
+           android:ellipsize="end"
+            /> 
+
+      
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/bl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_alignParentRight="true" 
+        android:layout_centerVertical="true"
+        >
+        
+        <TextView android:id="@+id/quanzi_time" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+      		android:text="2015-6-24 8:30"
+      		 android:layout_marginTop="@dimen/activity_horizontal_margin"
+      		 android:textSize="12sp"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

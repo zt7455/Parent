@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback" >
+
+    <com.shengliedu.parent.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.parent.view.CustomTitle>
+
+    <LinearLayout
+        android:id="@+id/feedback_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_below="@id/ctitle"
+        android:orientation="vertical" >
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:id="@+id/opinion_feedback_edit"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:gravity="left|top"
+            android:hint="感谢反馈，请写下您的问题或建议。"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/opinion_feedback_ok"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

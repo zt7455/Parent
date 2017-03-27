@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+     <com.shengliedu.parent.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.parent.view.CustomTitle>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/qunliao_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/qunliao_imageview"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/qun" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/qunliao_imageview"
+                    android:text="群聊"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/qunliao_imageview"
+                    android:background="@color/darkgray" />
+            </RelativeLayout>
+
+            <com.shengliedu.parent.view.NoScrollListview
+                android:id="@+id/qunliao_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/darkgray"
+                android:dividerHeight="0.2dp"
+                android:visibility="gone" >
+            </com.shengliedu.parent.view.NoScrollListview>
+
+            <RelativeLayout
+                android:id="@+id/laoshi_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/laoshi_imageview"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/laoshi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/laoshi_imageview"
+                    android:text="老师"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/laoshi_imageview"
+                    android:background="@color/darkgray" />
+            </RelativeLayout>
+
+            <com.shengliedu.parent.view.NoScrollListview
+                android:id="@+id/laoshi_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/darkgray"
+                android:dividerHeight="0.2dp"
+                android:visibility="gone" >
+            </com.shengliedu.parent.view.NoScrollListview>
+
+            <RelativeLayout
+                android:id="@+id/jiazhang_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/jiazhang_imageview"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/jiazhang" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_toRightOf="@id/jiazhang_imageview"
+                    android:text="家长"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/jiazhang_imageview"
+                    android:background="@color/darkgray" />
+            </RelativeLayout>
+
+            <com.shengliedu.parent.view.NoScrollListview
+                android:id="@+id/jiazhang_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/darkgray"
+                android:dividerHeight="0.2dp"
+                android:visibility="gone" >
+            </com.shengliedu.parent.view.NoScrollListview>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

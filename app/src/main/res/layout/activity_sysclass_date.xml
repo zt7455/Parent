@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/loginback" >
+
+    <com.shengliedu.parent.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.parent.view.CustomTitle>
+
+    <RelativeLayout
+        android:id="@+id/begins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/after_date" >
+
+        <TextView
+            android:id="@+id/begins_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="返回今天课程"
+            android:textColor="@color/seagreen"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/begins_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/begins_center"
+            android:text=" | "
+            android:textColor="@color/seagreen" />
+
+        <TextView
+            android:id="@+id/begins_tva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/begins_t"
+            android:text="上学期 "
+            android:textColor="@color/seagreen"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/begins_la"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/begins_tva"
+            android:background="@mipmap/after_jiantoua" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/begins_center" >
+
+            <TextView
+                android:id="@+id/begins_tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=" | "
+                android:textColor="@color/seagreen" />
+
+            <TextView
+                android:id="@+id/begins_tvb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/begins_tt"
+                android:text="下学期 "
+                android:textColor="@color/seagreen"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/begins_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/begins_tvb"
+                android:background="@mipmap/after_jiantoub" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/begins_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/begins"
+        android:layout_below="@+id/ctitle"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout>

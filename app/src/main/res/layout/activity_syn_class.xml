@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <com.shengliedu.parent.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.parent.view.CustomTitle>
+
+    <ScrollView
+        android:id="@+id/syn_question_titlescroll"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/ctitle" >
+
+        <LinearLayout
+            android:id="@+id/synsingleLin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/syn_question_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/logintext" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/xuanxianglinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/syn_question_titlescroll"
+        android:orientation="horizontal"
+        android:padding="@dimen/item_top_margin" >
+
+        <TextView
+            android:id="@+id/syn_class_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选项："
+            android:textColor="@color/black"
+            android:textSize="@dimen/selecttext" />
+
+        <TextView
+            android:id="@+id/syn_question_pandun"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="@dimen/selecttext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/syn_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+         >
+
+        <TextView
+            android:id="@+id/syn_class_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注释："
+            android:textColor="@color/black"
+            android:textSize="@dimen/selecttext" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/syn_question_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/syn_linear"
+        android:layout_below="@+id/xuanxianglinear"
+        android:divider="@null"
+        android:listSelector="#00000000" >
+    </ListView>
+
+</RelativeLayout>

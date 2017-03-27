@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback"
+    android:orientation="vertical" >
+
+      <com.shengliedu.parent.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.parent.view.CustomTitle>
+
+    <RelativeLayout
+        android:id="@+id/lnshang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:background="@mipmap/after_date"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/planbelow_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="2014-03-27"
+            android:textColor="@color/seagreen" />
+
+        <ImageView
+            android:id="@+id/planbelow_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/planbelow_time"
+            android:background="@mipmap/planbelow_image" />
+
+        <TextView
+            android:id="@+id/planbelow_xingqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/planbelow_time"
+            android:text="星期一"
+            android:textColor="@color/seagreen" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lnshang"
+        android:layout_below="@+id/ctitle"
+        android:cacheColorHint="#00000000"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000" >
+    </ExpandableListView>
+
+
+</RelativeLayout>

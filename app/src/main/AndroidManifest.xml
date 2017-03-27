@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shengliedu.parent"
+    android:versionCode="1"
+    android:versionName="1.0.7" >
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+
+    <application
+        android:name="com.shengliedu.parent.app.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.shengliedu.parent.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.activity.SelectChildActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.activity.SelectChild2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.activity.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.activity.SysClassActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.activity.SysClass2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.activity.ConsoleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.activity.HomeworkAfterClassActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.activity.HomeworkAfterClass2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.new_homework.NewHomeworkDateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.new_homework.NewHomeWorkDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.activity.ChatMsgActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.activity.MoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SysClassDateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.new_synclass.NewSynClassDateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.ClassPlanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.new_synclass.ClassCotentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.new_synclass.SynBookActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.new_synclass.SynZiYuanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.new_synclass.NewSynClassDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SynClassSheJiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.FlashHtmlActivity"
+            android:process=":process.x5webview.init"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.PicActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.MediaPlayerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SynSingleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SynSeletQuestionAnalyticalActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SynDuoXuanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SynFillBlanksActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SynShuangLianXianActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SynSanLianXianActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SynNetTextBookActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SynPingJiaActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.OneToMoreQuestionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SynZiYuanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.homework.HomeworkDateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.homework.HomeWorkDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.homework.MovieActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.ResultsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.score.ChartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.score.TwoImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.score.EveryScoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.score.ClassExpressWeekActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.score.ClassExpressMonthActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.score.DisciplineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.score.DutyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.score.HomeworkExpressMonthActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.score.HomeworkExpressWeekActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.score.ExceptionReportActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.score.KnowledgeShortActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.jiatiao.NoteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.jiatiao.JiaTiaoDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.jiatiao.QingJiaActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.admininfo.AdminInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.admininfo.ChangeAddressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.admininfo.ChangeNikeNameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.admininfo.ChangeSignActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.FeedBackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.MyFeedBackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.SchoolNotifyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.AboutUsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.more.ShaiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.homework.PingJiaHomeWorkActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.synclass.SelectDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.pdf.ShowPdfFromUrlActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.ChatActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.ChoseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.ContactActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.CropImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.FriendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.MapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.MyRoomActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.NewFriendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.PicSrcPickerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.RoomMemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.chat.activitys.ShowPicActivitiy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.showdesign.SynDuoXuanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.showdesign.SynFillBlanksActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.showdesign.SynSanLianXianActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.showdesign.SynShuangLianXianActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.showdesign.SynSingleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.showdesign.SynNetTextBookActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.showdesign.SynZiYuanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.book.TeachBookContentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.book.TeachBookPageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.book.TeachBookPageHtmActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.book.TeachResourceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <meta-data
+            android:name="QBSDKAppKey"
+            android:value="pd0QPqK+I7etEpamUzsn9PW4" >
+        </meta-data>
+        <!-- <service android:name="com.shengliedu.parent.quanzi.services.IMService" /> -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service android:name="com.shengliedu.parent.service.PushService" >
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="LZO5j6AtSB4nrqYRcq6U3pSU9qG9I43V" />
+
+        <activity
+            android:name="com.shengliedu.parent.jia.JiaChartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.jia.JiaChartActivity1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.jia.JiaChartActivity2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.jia.JiaChartActivity3"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shengliedu.parent.jia.JiaChartActivity4"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 新作业 -->
+        <!--<activity-->
+            <!--android:name="com.shengliedu.parent.new_homework.HomeworkListActivity"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+    </application>
+
+</manifest>
